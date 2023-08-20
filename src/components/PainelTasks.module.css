@@ -1,0 +1,104 @@
+.title {
+  margin: 3.5rem 0 0 0;
+  font-size: .9rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  color: var(--purple)
+}
+
+.title button {
+  padding: 1px 10px;
+  font-size: .8rem;
+  border: none;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+}
+
+.title p:nth-child(1) {
+  color: var(--blue)
+}
+
+.tasksOut {
+  margin-top: 2rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 24px;
+  color: var(--gray-300);
+  font-size: 1rem;
+}
+
+.tasksOut svg  {
+  color: var(--gray-300)
+}
+
+.tasksOut p  {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.tasks {
+  margin-top: 2rem;
+  gap: 12px;
+  display: flex;
+  align-items: flex-start;
+  background: var(--gray-500);
+  width: 100%;
+  border: 1px solid var(--gray-400);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.tasks button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  border-radius: 2px;
+  transition: color 0.5s;
+}
+
+.tasks button:hover {
+  color: var(--red-500);
+}
+
+.tasks input[type="checkbox"]  {
+  display: none;
+}
+
+.tasks label {
+  text-decoration: none;
+}
+
+.tasks input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.tasks input[type="checkbox"] + label:before  {
+  content: '';
+  margin-right: 10px;
+  background-color: var(--gray-500);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tasks input[type="checkbox"]:checked + label:before {
+  background-color: var(--purple);
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  border: none;
+  padding: 1px;
+}
