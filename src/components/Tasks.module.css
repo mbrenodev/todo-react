@@ -1,53 +1,9 @@
-.title {
-  margin: 3.5rem 0 0 0;
-  font-size: .9rem;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  color: var(--purple)
-}
-
-.title button {
-  padding: 1px 10px;
-  font-size: .8rem;
-  border: none;
-  background-color: var(--gray-400);
-  color: var(--gray-200);
-  border-radius: 999px;
-}
-
-.title p:nth-child(1) {
-  color: var(--blue)
-}
-
-.tasksOut {
-  margin-top: 2rem;
-  border-top: 1px solid var(--gray-400);
-  border-radius: 8px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 64px 24px;
-  color: var(--gray-300);
-  font-size: 1rem;
-}
-
-.tasksOut svg  {
-  color: var(--gray-300)
-}
-
-.tasksOut p  {
-  font-weight: bold;
-  margin-top: 1rem;
-}
 
 .tasks {
   margin-top: 2rem;
   gap: 12px;
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
   background: var(--gray-500);
   width: 100%;
   border: 1px solid var(--gray-400);
@@ -75,10 +31,6 @@
   display: none;
 }
 
-.tasks label {
-  text-decoration: none;
-}
-
 .tasks input[type="checkbox"]:checked + label {
   text-decoration: line-through;
 }
@@ -89,6 +41,7 @@
   background-color: var(--gray-500);
   width: 16px;
   height: 16px;
+  vertical-align: middle;
   border-radius: 50%;
   border: 1px solid var(--blue);
   display: inline-block;
